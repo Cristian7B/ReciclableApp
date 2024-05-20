@@ -6,6 +6,3 @@ def inicio(request):
 
 def tecnologias(request):
     return render(request, "Reciclable/tecnologias.html/")
-
-def nosotros(request):
-    return render(request, "Reciclable/nosotros.html/")

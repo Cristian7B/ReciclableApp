@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Reciclable ♻</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles_tecnologias.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <div class="nav">
+                    <div class="left">
+                        <h2>ReciclableApp</h2>
+                    </div>
+                    <div class="right">
+                        <a href="http://127.0.0.1:8000/inicio/" target="_blank">Inicio</a>
+                        <a href="http://127.0.0.1:8000/tecnologias/" target="_blank">Tecnologías</a>
+                        <a href="https://github.com/Cristian7B/ReciclableApp/" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <header>
+            <h1>¡Nuestras tecnologías!</h1>
+        </header>
+
+        <div class="cards">
+            <a href="https://docs.python.org/3/" target="_blank" class="link-page">
+                <article class="card">
+                    <img class="imagen" id="img1" src="{% static 'imagenes/Python.png' %}" alt="">
+                    <h2>Python</h2>
+                </article>
+            </a>
+            <a href="https://www.tensorflow.org/api_docs" target="_blank" class="link-page">
+                <article class="card">
+                    <img class="imagen" id="img2" src="{% static 'imagenes/Tensorflow.png' %}" alt="">
+                    <h2>TensorFlow</h2>
+                </article>
+            </a>
+            <a href="https://github.com/Cristian7B/ReciclableApp" target="_blank" class="link-page">
+                <article class="card">  
+                    <img class="imagen" id="img3" src="{% static 'imagenes/GitHub.png' %}" alt="">
+                    <h2>GitHub</h2>
+                </article>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
