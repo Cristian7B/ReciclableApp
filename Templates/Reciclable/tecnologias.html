@@ -1,4 +1,6 @@
+{% extends "Reciclable/template.html" %}
 {% load static %}
+{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Reciclable ♻</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles_tecnologias.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tecnologias.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -20,20 +22,6 @@
 
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <div class="nav">
-                    <div class="left">
-                        <h2>ReciclableApp</h2>
-                    </div>
-                    <div class="right">
-                        <a href="http://127.0.0.1:8000/inicio/" target="_blank">Inicio</a>
-                        <a href="http://127.0.0.1:8000/tecnologias/" target="_blank">Tecnologías</a>
-                        <a href="https://github.com/Cristian7B/ReciclableApp/" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </ul>
-        </nav>
         <header>
             <h1>¡Nuestras tecnologías!</h1>
         </header>
@@ -61,3 +49,5 @@
     </div>
 </body>
 </html>
+
+{% endblock %}

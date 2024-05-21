@@ -68,35 +68,27 @@ nav ul li {
     text-decoration: none;
     color: #717744;
 }
-
-header {
+.icon-menu {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 70vh;
     justify-content: center;
+    color: #717744;
+    font-size: 22px;
+    display: none;
 }
 
-header h1 {
-    font-size: 90px;
-    color: #373D20;
-}
-header p {
-    color: #373D20;
+@media( max-width: 900px ) {
+    .right {
+        display: none;
+    }
+
+    .icon-menu {
+        display: flex;
+    }
 }
 
-header button {
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: #717744;
-    color: #fff;
-    font-weight: 600;
-    margin-top: 15px;
-    transition: all 0.2s ease;
-}
-
-header button:hover {
-    background-color: #6b705f;
+@media( max-width: 500px) {
+    nav {
+        width: 70%;
+    }
 }

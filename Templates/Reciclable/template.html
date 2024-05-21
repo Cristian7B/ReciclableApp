@@ -1,6 +1,4 @@
-{% extends "Reciclable/template.html" %}
 {% load static %}
-{% block content %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Reciclable ♻</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/template.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -22,13 +20,26 @@
 
 <body>
     <div class="container">
-        <header>
-            <h1>¡Bienvenido!</h1>
-            <p>Inicia tu cámara para empezar</p>
-            <a href="http://127.0.0.1:8000/"><button>Iniciar</button></a>
-        </header>
+        <nav>
+            <ul>
+                <div class="nav">
+                    <div class="left">
+                        <h2>ReciclableApp</h2>
+                    </div>
+                    <div class="right">
+                        <a href="http://127.0.0.1:8000/inicio/">Inicio</a>
+                        <a href="http://127.0.0.1:8000/tecnologias/">Tecnologías</a>
+                        <a href="https://github.com/Cristian7B/ReciclableApp/" target="_blank">GitHub</a>
+                    </div>
+                    <div class="icon-menu">
+                        <ion-icon name="grid-outline"></ion-icon>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        {% block content %}
+
+        {% endblock %}
     </div>
 </body>
 </html>
-
-{% endblock %}
