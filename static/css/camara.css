@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: none;
+    font-family: "Poppins";
+}
+
+.container {
+    height: 120vh;
+}
+
+.container h1 {
+    font-size: 90px;
+    color: #373D20;
+}
+
+#video {
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #717744;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #6b705f;
+}
+
+canvas {
+    border-radius: 10px;
+}
+
+.imagenes {
+    display: flex;
+}
+
+#imagenPrueba {
+    border-radius: 10px;
+}

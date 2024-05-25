@@ -20,6 +20,8 @@ from reciclable.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', inicio),
-    path("tecnologias/", tecnologias)
+    path('', inicio),
+    path("tecnologias/", tecnologias),
+    path("camara/", camara),
+    path('guardarfoto/', guardar_foto, name='guardar'),
 ]
