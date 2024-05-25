@@ -16,7 +16,7 @@ def camara(request):
 import base64
 from django.core.files.base import ContentFile
 from django.http import JsonResponse
-from PIL import Image
+# from PIL import Image
 import io
 
 def guardar_foto(request):
@@ -28,18 +28,18 @@ def guardar_foto(request):
             img_data = base64.b64decode(imgstr)
 
 
-            image = Image.open(io.BytesIO(img_data)) #prueba
-            imagenprueba = image.convert('L')
+            # # image = Image.open(io.BytesIO(img_data)) #prueba
+            # imagenprueba = image.convert('L')
 
-            buffer = io.BytesIO()
-            imagenprueba.save(buffer, format=ext)
-            buffer.seek(0)
-            imagenprueba_data = buffer.getvalue()
+            # buffer = io.BytesIO()
+            # imagenprueba.save(buffer, format=ext)
+            # buffer.seek(0)
+            # imagenprueba_data = buffer.getvalue()
 
-            imagenprueba_base64 = base64.b64encode(imagenprueba_data).decode('utf-8')
-            imagenprueba_url = f"data:image/{ext};base64,{imagenprueba_base64}"
+            # imagenprueba_base64 = base64.b64encode(imagenprueba_data).decode('utf-8')
+            # imagenprueba_url = f"data:image/{ext};base64,{imagenprueba_base64}"
 
-            return JsonResponse({'status': 'ok', 'imagenprueba_url': imagenprueba_url})
+            return JsonResponse({'status': 'ok'})
         return JsonResponse({'status': 'fail'}, status=400)
 
     return JsonResponse({'status': 'fail'}, status=405)
